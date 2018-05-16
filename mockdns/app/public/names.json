@@ -1,0 +1,9 @@
+[{
+    "name":"echo-bali",
+    "address":"192.168.5.10:3001"
+},
+{
+    "name":"echo-fiji",
+    "address":"192.168.5.10:3002"
+}
+]

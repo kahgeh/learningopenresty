@@ -1,0 +1,4 @@
+/echoservice/obj/**/*
+/echoservice/bin/**/*
+/echoservice/Properties/**/*
+/**/node_modules
