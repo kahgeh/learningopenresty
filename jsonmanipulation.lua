@@ -1,5 +1,6 @@
 -- learn how to manipulate object, filter
-local cjson = require "./lualib/cjson/util"
+local cjson = require "cjson"
 
 local my_json = [[{"my_array":[]}]]
-local t = cjson.decode(my_json)
+require 'pl.pretty'.dump( cjson.decode(my_json) )
+
