@@ -1,7 +1,6 @@
 -- learn how to manipulate object, filter
 local cjson = require "cjson"
 local pl = require 'pl.pretty'
-local my_json = [[{"my_array":[]}]]
 
 local file = io.open("mockdns/app/public/names.json")
 
