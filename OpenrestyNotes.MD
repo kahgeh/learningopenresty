@@ -18,6 +18,14 @@ https://github.com/openresty/lua-nginx-module/blob/master/README.markdown#direct
 
 
 
+# Libraries 
+
+https://github.com/bungle/awesome-resty
+
+lua-resty-socket
+
+
+
 ## API 
 
 e.g. ngx.say, ngx.req.get_headers

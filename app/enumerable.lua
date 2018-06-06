@@ -1,7 +1,17 @@
+local json = require "cjson"
+
 Enumerable = {items={}}
 
 function Enumerable:append(value)
     self.items[#self.items+1]=value
+end
+
+function Enumerable:tojson()
+    return json.encode(self.items)
+end
+
+function Enumerable:fromjson(jsontext)
+    self.items=json.decode(jsontext)
 end
 
 function Enumerable:filter(predicate)

@@ -1,2 +1,2 @@
 # Course Sub-Objectives
-Incorporate lookup into balancer
+Incorporate lookup into
