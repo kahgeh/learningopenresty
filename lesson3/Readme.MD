@@ -2,7 +2,7 @@
 1. Learn to code using  object oriented style referencing 
 2. Learn about modularizing using modules
 
-# Course Sub-Objectives
+# Sub-Objectives
 Better structure code to be able to do a look up with a simple call like this `dns:lookup("echo-fiji")`
 
 # Pre-requisites
