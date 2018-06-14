@@ -15,11 +15,12 @@ Instead of using a mock dns, use publicly available service discovery tools like
 1. Customize ServiceAddress in the consul service registration by passing in `-ip="$hostipaddress"` when running registrator
 
 ## openresty
-1. use init_worker_by_lua_block, notice how retrieving environment variable using os.getenv will always return nil - one way to overcome this is use ngx.timer.at
-2. use a timer to perform background task of updating lookup values
-3. logs - in order to get notice level logs instead of warn specify notice like this in the conf file: 
+1. environment variables are not automatically made available, only environment variables that are declared are made available. e.g. `env HOSTIP;` - this declaration is at the main level( not server or http). refer to the file `/usr/local/openresty/nginx/conf/nginx.conf`
+2. use init_worker_by_lua_block, notice how retrieving environment variable using os.getenv will always return nil - this is not an issue if os.getenv is called within a timer (`ngx.timer.at`) 
+3. use a timer to perform background task of updating lookup values
+4. logs - in order to get notice level logs instead of warn specify notice like this in the conf file: 
    `error_log /spool/logs/all.log notice`
-4. use ngx.ctx.<var name>
+5. use ngx.ctx.<var name>
 - in earlier phase like `access_by_lua` set the value 
 - access it in the later phase like the content phase
 
