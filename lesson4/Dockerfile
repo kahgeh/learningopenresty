@@ -1,5 +1,4 @@
 FROM openresty/openresty:alpine-fat
-RUN mkdir -p /usr/local/openresty/lualib/resty
 RUN mkdir -p /spool/logs
 ENV LANG=C.UTF-8
 
