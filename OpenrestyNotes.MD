@@ -34,3 +34,6 @@ https://github.com/openresty/lua-nginx-module/blob/master/README.markdown#nginx-
 
 # Other Notes
 dynamic upstream : https://github.com/yzprofile/ngx_http_dyups_module
+
+turn on rewrite log
+rewrite_log on;
